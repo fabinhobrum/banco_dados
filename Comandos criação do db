@@ -1,0 +1,29 @@
+-- Comando SQL para criar a tabela de produtos
+CREATE TABLE produtos (
+    id INT PRIMARY KEY,
+    nome VARCHAR(100),
+    preco DECIMAL(10,2),
+    estoque INT
+);
+
+-- Comando SQL para inserir registros na tabela de produtos
+INSERT INTO produtos (id, nome, preco, estoque)
+VALUES
+    (1, 'Livro A', 29.90, 50),
+    (2, 'Café Especial', 12.50, 100),
+    (3, 'Caneca Personalizada', 19.99, 30);
+
+-- Comando SQL para criar a tabela de pedidos
+CREATE TABLE pedidos (
+    id INT PRIMARY KEY,
+    data_pedido DATE,
+    cliente VARCHAR(100),
+    total DECIMAL(10,2)
+);
+
+-- Comando SQL para inserir registros na tabela de pedidos
+INSERT INTO pedidos (id, data_pedido, cliente, total)
+VALUES
+    (1, '2025-05-23', 'João da Silva', 42.40),
+    (2, '2025-05-22', 'Maria Souza', 31.50),
+    (3, '2025-05-21', 'Carlos Oliveira', 75.99);
